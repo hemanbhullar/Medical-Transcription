@@ -1,0 +1,448 @@
+body {margin:0;font-family:Arial}
+
+.topnav {
+  overflow: hidden;
+  background-color: white;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: rgb(49, 47, 47);
+  text-align: center;
+  padding: 14px 50px;
+  margin-right: 70px;
+  text-decoration: none;
+  font-size: 17px;
+}
+.dropdown-content a{
+  margin-left: 0px;
+}
+#navlinks{
+    padding-top: 20px;
+    float: right;
+}
+
+.topnav .icon {
+  display: none;
+  float: right;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 17px;    
+  border: none;
+  outline: none;
+  color: rgb(50, 48, 48);
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.totop:hover{
+  color: black !important;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  margin-right: 0px;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.topnav a:hover, .dropdown:hover .dropbtn {
+  text-decoration: underline;
+  text-decoration-color: skyblue;
+  text-decoration-thickness: 3px;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+@media screen and (max-width:1100px) {
+  .margin1{font-size: 25px !important;}
+  .margin{margin-top: -13px !important;}
+  .content{margin-top: -350px !important;
+  margin-left: 40px !important;}
+}
+@media screen and (max-width: 900px) {
+  .topnav a:not(:first-child), .dropdown .dropbtn {
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+  .s{width: 50px !important;}
+  .css-1j8o68g{
+    width: 100px !important;
+  }
+  .container{
+    flex-direction: column;
+}
+.ii{
+  border-right: 2px solid grey;
+}
+}
+@media screen and (max-width:1250px) {
+  .css-1j8o68g{
+    width:100px;
+  }
+}
+@media  screen and (max-width:1000px) {
+  .css-1j8o68g{
+    width:100px;
+  }
+  .topnav a{
+    margin-right: 0px;
+  }
+}
+@media screen and (max-width: 1160px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav a{
+    padding: 14px 30px;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .topnav.responsive .dropdown {float: none;}
+  .topnav.responsive .dropdown-content {position: relative;}
+  .topnav.responsive .dropdown .dropbtn {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+  .container div{
+    width: 350px !important;
+    margin: 0 auto !important;
+  }
+  .container div p{
+    font-size: 18px !important;
+  }
+  .content{
+    font-size: 15px !important;
+    margin-top: -395px !important;
+    margin-left: 20px !important;
+  }
+  .purpose{
+    flex-direction: column;
+  }
+  .footer{flex-direction: column;}
+  .pricing{
+    flex-direction: column;
+  }
+  .our-specialities{
+    flex-direction: column;
+  }
+  .div1{
+    flex-direction: column !important;
+  }
+  .animatedpara{
+    font-size: 15px !important;
+  }
+  .width{
+    height: 400px !important;
+  }
+  .contact{
+    flex-direction: column;
+  }
+  #name{font-size: 15px;}
+  #phone{font-size:15px;display: block !important;}
+  #e-mail{font-size: 15px !important;}
+  #send{font-size: 15px !important;}
+  #addresscontact{width: 100% !important;margin-top: 20px !important;margin-left: 0px !important;}
+  .formcontact{width: 100% !important;}
+  #Message{width: 250px !important;}
+  #navlinks{
+    padding-top: 20px;
+    float: left;
+}
+}
+@media screen and (max-width: 1024px){
+  .uppersection{overflow-y: scroll !important;
+    height: 200px !important;
+     }
+     .uppersection::-webkit-scrollbar-thumb{border-radius: 20px;
+     }
+     .medicalimage{
+       height:190px !important;
+     }
+    .heading1{
+      font-size: 20px !important;
+      margin-bottom: -4px !important;
+      margin-top: -15px !important;
+    }
+}
+.image1{
+    width: 100%;
+    height:400px
+}
+#first{
+   display: inline-block;
+   position: relative;
+}
+#first:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #0087ca;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+#first:hover:after{
+    transform:scaleX(1);
+    transform-origin: bottom left;
+}
+#second{
+    display: inline-block;
+    position: relative;
+ }
+ #second:after {
+     content: '';
+     position: absolute;
+     width: 100%;
+     transform: scaleX(0);
+     height: 2px;
+     bottom: 0;
+     left: 0;
+     background-color: #0087ca;
+     transform-origin: bottom right;
+     transition: transform 0.25s ease-out;
+   }
+ #second:hover:after{
+     transform:scaleX(1);
+     transform-origin: bottom left;
+ }
+@keyframes border {
+    from{border-bottom-width: 0px;}
+    to{border-bottom-width: 100%;}
+}
+.secondsec{
+    font-size: 35px;
+    font-family:Arial, Helvetica, sans-serif;
+    color: rgb(68, 64, 64);
+    margin-top: 20px;
+}
+.container{
+    display: flex;
+}
+.container div{
+    width: 700px;
+    height: 500px;
+    margin-left: 40px;
+    margin: 20px;
+}
+.i{
+  border-right: 2px solid grey;
+}
+.container div:hover{
+  color:#0087ca
+}
+div.home{
+  width:100%;
+  height: 400px;
+  background-size:contain;
+  border-top: 2px solid black;
+  position: relative;
+  opacity: 0.6;
+  margin-top: 70px;
+  
+}
+div.content{
+  position: relative;
+  background-color: white;
+  width: 90%;
+  margin-top: -300px;
+  margin-left:100px;
+  border-radius: 10px;
+  font-size: 20px;
+}
+.home1{margin-top: 20px;}
+div.content:hover{
+  background: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 80%),
+radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 25%, #5d4a1f 62.5%, #5d4a1f 100%);
+}
+.about-us{
+  text-align: center;
+  width: 90%;
+  margin: 0 auto;
+  color: rgb(42, 40, 40);
+  font-size: 18px;
+}
+.purpose{
+  display: flex;
+  margin: 0 auto;
+}
+.purpose div{
+  margin: 0 auto;
+  margin-bottom: 30px;
+  width: 400px;
+  height: 400px;
+  background-color: whitesmoke;
+  box-shadow: 5px 10px 8px #888888;
+}
+.purpose div:hover{
+  border: 2px solid black;
+}
+.footer{
+  margin: 0 auto;
+  display: flex;
+}
+.footer div{
+  margin: 0 auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: #f9f9f9;
+}
+.footer div ul li{
+  color: #f9f9f9;
+}
+.footer div ul li:hover{
+  text-decoration: underline;
+  text-decoration-color: aqua;
+}
+.formMT:hover{
+  background-color: white;
+}
+.pricing{
+  display: flex;
+  margin: 0 auto;
+}
+.pricing div{
+  margin: 0 auto;
+  width: 400px;
+  height:500px;
+}
+.pricing div:hover{
+  border-radius: 30px;
+  border: black 2px dotted;
+}
+.specialities{
+  position: relative;
+  animation: bigsmall 2s ease-in-out  infinite alternate;
+}
+@keyframes bigsmall {
+  from{font-size: 15px;color: whitesmoke;text-decoration: none;text-decoration-color: black;}
+  to{
+    font-size: 40px;color: rgb(216, 49, 133);text-decoration:underline;text-decoration-color: rgb(201, 32, 32);
+  }
+}
+.our-specialities{
+  display: flex;
+}
+.our-specialities div{
+  margin-right:40px;
+  margin-left: 40px;
+  border: 2px solid blue;
+  font-family: cursive;
+  border-radius: 20px;
+  margin: 20px;
+  font-size: 25px;
+  width: 300px;
+  text-align: center;
+}
+.our-specialities div:hover{
+  background-color: blue;
+}
+.lastMT{
+  margin: 15px;
+  width: 95%;
+  border-radius: 30px;
+  font-size: 20px;
+  padding: 40px;
+  color: white;
+  height: 300px;
+
+}
+.BPOtop img{
+  position: relative;
+  animation: imagechange 5s ease-in-out infinite alternate;
+}
+@keyframes imagechange {
+  from{
+    content: url(https://www.javatpoint.com/fullformpages/images/bpo.jpg);
+  }
+  to{
+    content: url(https://lyfin360.com/wp-content/uploads/2020/08/BPO-full-form.png);
+  }
+}
+.paraBPO{
+  position: relative;
+  animation: blackwhite 3s ease-in-out infinite alternate;
+}
+@keyframes blackwhite {
+  from{background-color: white;}
+  to{background-color: whitesmoke;}
+}
+.aboutustop{
+  animation: changeimg 4s ease-in-out  infinite  alternate;
+ 
+}
+@keyframes changeimg {
+  from{opacity: 1;}
+  to{opacity: 0;}
+}
+.div1 div{
+  margin: 0 auto;
+
+}
+.customerBPO{
+  position: relative;
+  animation: colorchange 3s ease-in-out infinite alternate;
+}
+@keyframes colorchange {
+  from{background-color: red;}
+  to{background-color: blue;}
+}
+.animatedpara{
+  position: relative;
+  animation: para 10s ease-in-out infinite alternate;
+  font-size: 30px;
+  color: aliceblue;
+}
+@keyframes para {
+  from{
+    margin-left: 0;
+  }
+  to{margin-left: 70%;}
+}
+.divanim{
+ position: relative;
+ animation: rotate 3s ease-in-out infinite alternate;
+}
+@keyframes rotate {
+  from{transform: rotateY(0deg);}
+  to{transform: rotateY(360deg);}
+}
